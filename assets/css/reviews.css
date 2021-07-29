@@ -1,0 +1,76 @@
+.reviews {
+    position: relative;
+    width: 100%;
+    padding: 120px 0 115px;
+}
+.question-ico svg {
+	max-height: 32px;
+	max-width: 32px;
+}
+.question-ico:hover svg {
+	fill: #03808B;
+	stroke: #03808B;
+}
+.reviews .cards__tit {
+	background-color: #3D3A45;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	padding: 9px 28px;
+}
+.reviews .cards__tit-item {
+	position: relative;
+	cursor: pointer;
+}
+.reviews .cards__tit-item.active {
+	color: #A7A7A7;
+}
+.reviews .cards__tit-item.active:after {
+	content: '';
+	position: absolute;
+	left: calc(50% - 4px);
+	bottom: -10px;
+	border: 8px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+.reviews .cards__tit p {
+	margin: 0;
+}
+.reviews .cards__tit span {
+	font-weight: 400;
+}
+.reviews .cards__reviewlist {
+	display: none;
+}
+.reviews .cards__reviewlist.active {
+	display: block;
+}
+.reviews .search__pagination {
+	width: 100%;
+}
+.reviews .search__pagination .search__page {
+	justify-content: center;
+}
+.reviews .cards__form {
+    background-color: #03808B;
+	padding: 12px 25px 38px;
+}
+.reviews .cards__form .cards__label {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+@media (max-width: 1199px) {
+	.reviews {
+		padding-bottom: 99px;
+	}
+}
+@media (max-width: 991px) {
+	.reviews .review__wrap {
+		margin-bottom: 50px;
+	}
+}

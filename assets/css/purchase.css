@@ -1,72 +1,3 @@
-*, *::before, *::after {
-	box-sizing: border-box;
-}
-body,
-html {
-	height: 100%;
-}
-body {
-	font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    color: #000;
-	line-height: 1.5;
-	margin: 0;
-	background-color: #fff;
-}
-p {
-	margin: 0;
-}
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 300;
-    font-style: normal;
-    src: url('../fonts/Roboto/Roboto-Light.eot?') format('eot'), url('../fonts/Roboto/Roboto-Light.woff') format('woff'), url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Roboto';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/Roboto/Roboto-Regular.eot?') format('eot'), url('../fonts/Roboto/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-style: normal;
-    src: url('../fonts/Roboto/Roboto-Medium.eot?') format('eot'), url('../fonts/Roboto/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Roboto';
-    font-weight: bold;
-    font-style: normal;
-    src: url('../fonts/Roboto/Roboto-Bold.eot?') format('eot'), url('../fonts/Roboto/Roboto-Bold.woff') format('woff'), url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
-    font-display: swap;
-}
-.container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-@media (min-width: 576px) {
-	.container {
-		max-width: 540px;
-	}
-}
-@media (min-width: 768px) {
-	.container {
-		max-width: 720px;
-	}
-}
-@media (min-width: 992px) {
-	.container {
-		max-width: 960px;
-	}
-}
 .table-purchase {
 	min-width: 850px;
 	width: 100%;
@@ -165,6 +96,7 @@ p {
 }
 .table-inner .col-ico {
 	display: flex;
+	justify-content: center;
 }
 .table-inner .col-ico img {
 	margin-left: 10px;
@@ -264,7 +196,6 @@ p {
 	margin: 0;
 	padding: 10px 0;
 }
-
 
 /*call modals*/
 .call-nav {

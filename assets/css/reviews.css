@@ -74,3 +74,21 @@
 		margin-bottom: 50px;
 	}
 }
+@media (max-width: 767px) {
+	.reviews .cards__tit p {
+		font-size: 16px;
+	}
+}
+@media (max-width: 575px) {
+	.reviews .cards__tit {
+		padding: 9px 10px;
+	}
+	.reviews .cards__tit p {
+		font-size: 14px;
+	}
+}
+@media (max-width: 480px) { 
+	.reviews .cards__tit p {
+		font-size: 12px;
+	}
+}

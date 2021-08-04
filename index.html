@@ -207,9 +207,10 @@
 						</ul>
 					</div>
 					<div class="link-holder-col">
-						<picture>
-							<img src="assets/img/image.jpg" align="img">
-						</picture>
+						<div class="img-holder">
+							<!-- <img src="assets/img/image.jpg" align="img"> -->
+							<img src="" alt="slide" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -348,5 +349,28 @@
 	</div>
 
 <script src="assets/js/scripts.min.js"></script>
+
+<script>
+	function changeBody(i) {
+		let path = 'assets/img/table-slide/';
+		let bg_img = [
+			path + 'slide1.jpg', 
+			path + 'slide2.jpg', 
+			path + 'slide3.jpg', 
+			path + 'slide4.jpg', 
+			path + 'slide5.jpg', 
+			path + 'slide6.jpg', 
+			path + 'slide7.jpg', 
+			path + 'slide8.jpg', 
+			path + 'slide9.jpg', 
+			path + 'slide10.jpg', 
+			path + 'slide11.jpg'
+		];
+		if(typeof(i) == 'undefined' || i > bg_img.length) i = 0;
+		$('.link-holder-col .img-holder img').attr('src', bg_img[i]);
+		setTimeout(changeBody, 2000, i+1);
+	}
+	changeBody();
+</script>
 </body>
 </html>

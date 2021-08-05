@@ -2,6 +2,9 @@
 	min-width: 850px;
 	width: 100%;
 }
+.table-purchase tr {
+	/*border: 1px solid #000;*/
+}
 .table-head p,
 .table-purchase p {
 	margin: 0;
@@ -74,9 +77,6 @@
 }
 .table-save .btn:hover {
 	background-color: #942424;
-}
-.table-info .table-responsive {
-	overflow-x: auto;
 }
 .table-info {
 	margin-bottom: 30px;
@@ -645,6 +645,9 @@
 }
 
 @media (max-width: 991px) {
+	.table-info .table-responsive {
+		overflow-x: auto;
+	}
 	.table-info {
 		position: relative;
 		padding-right: 30px;

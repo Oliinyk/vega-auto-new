@@ -1,0 +1,126 @@
+.header-report {
+	padding: 20px 0;
+}
+
+.header-report .header__logo {
+	margin: 0 auto;
+}
+
+.hero-report {
+	padding: 0;
+	margin: 0;
+	min-height: 249px;
+}
+
+.hero-report img {
+	width: 100%;
+    height: auto;
+}
+
+.inspection-report .table-report {
+	margin: 22px 0 70px;
+}
+
+.inspection-report .table-report p {
+	font-size: 16px;
+	margin: 0;
+}
+
+.inspection-report .title-item {
+	text-align: center;
+	margin: 0 0 40px;
+}
+
+.inspection-report .title-item .title {
+	font-size: 16px;
+	margin: 0 0 15px;
+}
+
+.inspection-report .title-item p {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.inspection-report .report-item {
+	font-size: 16px;
+}
+
+.inspection-report .report-item  p {
+	margin: 0;
+}
+
+.inspection-report .item-head,
+.inspection-report .item-main,
+.inspection-report .item-text,
+.inspection-report .item-list {
+	margin: 0 0 15px;
+}
+
+.inspection-report .item-main .item-main-title {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.inspection-report .item-text {
+	color: #6B6B6B;
+}
+
+.inspection-report .item-list {
+	list-style-type: decimal;
+	padding: 0 0 0 20px;
+}
+
+.inspection-report .report-slide .active-slide img {
+	width: 100%;
+}
+
+.inspection-report .report-slide .thumb {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.inspection-report .report-slide .thumb img {
+	padding-bottom: 10px;
+	width: 33.33%;
+}
+
+.inspection-report .report-slide .thumb img + img {
+	padding-left: 10px;
+}
+
+.inspection-report .report-slide .thumb img:nth-child(3n+4) {
+	padding-left: 0;
+}
+
+.inspection-report .report-foot {
+	padding: 65px 0 60px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.inspection-report .report-foot .link {
+	color: #03808B;
+	display: block;
+}
+
+@media (max-width: 991px) {
+	.hero-report {
+	    overflow: hidden;
+	}
+	.hero-report img {
+		height: 100%;
+		width: auto;
+		min-width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.inspection-report .table-report {
+		margin: 22px 0 40px;
+	}
+	.inspection-report .report-foot {
+		padding: 40px 0 30px;
+	}
+}
